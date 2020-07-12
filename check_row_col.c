@@ -6,7 +6,7 @@
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 22:24:55 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/12 19:51:30 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 19:54:03 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int		check_no_wrap(int r, int c)
 	return (result);
 }
 
-int		check_is_vaild(int r, int c)
+int		check_is_vaild(void)
 {
 	int result;
 
