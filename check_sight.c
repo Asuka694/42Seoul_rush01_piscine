@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   check_sight.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jaeskim <jaeskim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 22:04:32 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/11 22:38:04 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 18:44:52 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,7 +126,7 @@ int		check_down(void)
 			}
 			row--;
 		}
-		if (g_colup[col] != visible_box)
+		if (g_coldown[col] != visible_box)
 			return (0);
 		col++;
 	}

@@ -6,7 +6,7 @@
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 17:01:15 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/12 16:57:59 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 18:59:00 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	check_last(int i)
 		j = 3;
 		while (j >= 0)
 		{
-			g_board[j][i] = j + 1;
+			g_board[j][i] = 4 - j;
 			j--;
 		}
 	}
@@ -55,7 +55,7 @@ void	check_last(int i)
 		j = 3;
 		while (j >= 0)
 		{
-			g_board[i][j] = j + 1;
+			g_board[i][j] = 4 - j;
 			j--;
 		}
 	}
