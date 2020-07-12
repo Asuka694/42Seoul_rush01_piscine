@@ -6,7 +6,7 @@
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 21:50:12 by jeujeon           #+#    #+#             */
-/*   Updated: 2020/07/12 21:25:05 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 21:47:41 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,8 @@ int		recursive(int r, int c)
 			i = 1;
 			if (g_board_bak[r][c] == 0)
 				recursive_col(r, c, &i);
-			recursive(r, c + 1);
+			else
+				recursive(r, c + 1);
 		}
 		else
 			recursive(r + 1, 0);
