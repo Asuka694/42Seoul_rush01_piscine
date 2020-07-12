@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   util.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jaeskim <jaeskim@student.42.fr>            +#+  +:+       +#+        */
+/*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 20:29:29 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/11 22:40:33 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 19:50:52 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ extern int g_rowleft[4];
 extern int g_rowright[4];
 extern int g_board[4][4];
 
-void print_board()
+void	print_board(void)
 {
-	int i;
-	int j;
-	char tmp;
+	int		i;
+	int		j;
+	char	tmp;
 
 	i = 0;
 	while (i < 4)
