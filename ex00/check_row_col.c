@@ -6,9 +6,11 @@
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 22:24:55 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/12 20:10:51 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 20:50:45 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "main.h"
 
 extern int g_colup[4];
 extern int g_coldown[4];
@@ -16,11 +18,6 @@ extern int g_rowleft[4];
 extern int g_rowright[4];
 extern int g_board[4][4];
 extern int g_board_bak[4][4];
-
-int		check_left(void);
-int		check_right(void);
-int		check_up(void);
-int		check_down(void);
 
 int		check_row(int r, int c)
 {

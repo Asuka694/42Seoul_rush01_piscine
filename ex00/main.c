@@ -6,11 +6,11 @@
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 12:35:28 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/12 20:17:04 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 20:52:24 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "main.h"
 
 int g_colup[4];
 int g_coldown[4];
@@ -18,9 +18,6 @@ int g_rowleft[4];
 int g_rowright[4];
 int g_board[4][4];
 int g_board_bak[4][4];
-
-void	print_board();
-int		fill_board(void);
 
 void	set_argv(char *str, int cnt, int i)
 {

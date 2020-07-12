@@ -6,18 +6,15 @@
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 21:50:12 by jeujeon           #+#    #+#             */
-/*   Updated: 2020/07/12 20:25:53 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 20:51:42 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "main.h"
 
 extern int g_board[4][4];
 extern int g_board_bak[4][4];
 int g_flag = 0;
-
-int		check_is_vaild(int r, int c);
-int		check_no_wrap(int r, int c);
-void	print_board();
-int		recursive(int r, int c);
 
 void	recursive_col(int r, int c, int *i)
 {
@@ -52,7 +49,7 @@ int		recursive(int r, int c)
 	}
 	else
 	{
-		if (check_is_vaild(r, c))
+		if (check_is_vaild())
 			g_flag = 1;
 	}
 	return (g_flag);

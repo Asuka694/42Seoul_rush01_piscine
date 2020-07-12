@@ -1,42 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   util.c                                             :+:      :+:    :+:   */
+/*   fill_init.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/11 20:29:29 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/12 20:52:02 by jaeskim          ###   ########.fr       */
+/*   Created: 2020/07/12 20:34:52 by jaeskim           #+#    #+#             */
+/*   Updated: 2020/07/12 20:35:48 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.h"
+#ifndef FILL_INIT_H
+# define FILL_INIT_H
 
-extern int g_colup[4];
-extern int g_coldown[4];
-extern int g_rowleft[4];
-extern int g_rowright[4];
-extern int g_board[4][4];
+void	check_last_part1(int i);
+void	check_last_part2(int i);
+void	check_first(int i);
+void	check_first_second(int i);
+void	check_second_third(int i);
 
-void	print_board(void)
-{
-	int		i;
-	int		j;
-	char	tmp;
-
-	i = 0;
-	while (i < 4)
-	{
-		j = 0;
-		while (j < 4)
-		{
-			tmp = g_board[i][j] + '0';
-			write(1, &tmp, 1);
-			if (j != 3)
-				write(1, " ", 1);
-			++j;
-		}
-		write(1, "\n", 1);
-		++i;
-	}
-}
+#endif

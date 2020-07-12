@@ -1,42 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   util.c                                             :+:      :+:    :+:   */
+/*   recursive.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/11 20:29:29 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/12 20:52:02 by jaeskim          ###   ########.fr       */
+/*   Created: 2020/07/12 20:36:30 by jaeskim           #+#    #+#             */
+/*   Updated: 2020/07/12 20:37:36 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.h"
+#ifndef RECURSIVE_H
+# define RECURSIVE_H
 
-extern int g_colup[4];
-extern int g_coldown[4];
-extern int g_rowleft[4];
-extern int g_rowright[4];
-extern int g_board[4][4];
+void	recursive_col(int r, int c, int *i);
+int		recursive(int r, int c);
 
-void	print_board(void)
-{
-	int		i;
-	int		j;
-	char	tmp;
-
-	i = 0;
-	while (i < 4)
-	{
-		j = 0;
-		while (j < 4)
-		{
-			tmp = g_board[i][j] + '0';
-			write(1, &tmp, 1);
-			if (j != 3)
-				write(1, " ", 1);
-			++j;
-		}
-		write(1, "\n", 1);
-		++i;
-	}
-}
+#endif
