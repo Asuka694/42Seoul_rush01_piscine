@@ -6,7 +6,7 @@
 /*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 20:29:29 by jaeskim           #+#    #+#             */
-/*   Updated: 2020/07/12 19:50:52 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 20:16:57 by jaeskim          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ void	print_board(void)
 		{
 			tmp = g_board[i][j] + '0';
 			write(1, &tmp, 1);
-			write(1, " ", 1);
+			if (j != 3)
+				write(1, " ", 1);
 			++j;
 		}
 		write(1, "\n", 1);
