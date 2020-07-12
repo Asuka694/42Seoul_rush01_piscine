@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   recursive.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jaeskim <jaeskim@student.42seoul.kr>       +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 21:50:12 by jeujeon           #+#    #+#             */
-/*   Updated: 2020/07/12 18:52:34 by jaeskim          ###   ########.fr       */
+/*   Updated: 2020/07/12 19:29:15 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,15 @@ int	recursive(int r, int c)
 			recursive(r + 1, c);
 		}
 	}
+	else
+	{	
+		if (check_is_vaild(r, c))
+		{
+			g_flag = 1;
+			return (1);
+		}
+	}
+	
 	return (g_flag);
 }
 
